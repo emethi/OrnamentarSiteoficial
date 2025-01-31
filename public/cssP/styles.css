@@ -1,0 +1,194 @@
+/* Estilizando o corpo da página */
+body {
+    font-family: 'Arial', sans-serif; /* Define a fonte padrão para Arial, com fallback para sans-serif */
+    background: linear-gradient(135deg, #0374ac, #223b43, #012b3b); /* Gradiente de fundo */
+    color: #ffffff; /* Define a cor do texto */
+    margin: 0; /* Remove margens padrão */
+    padding: 0; /* Remove preenchimentos padrão */
+    display: flex; /* Define o layout como flexível */
+    flex-direction: column; /* Define a direção dos itens como coluna */
+    min-height: 100vh; /* Define a altura mínima como 100% da viewport */
+    overflow-x: hidden; /* Oculta rolagem horizontal */
+}
+
+/* Estilizando o contêiner principal para ocupar o espaço restante */
+.container {
+    flex: 1; /* Permite que o contêiner principal expanda para ocupar o espaço disponível */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px; /* Preenchimento ao redor do conteúdo */
+}
+
+/* Estilizando o cabeçalho */
+header {
+    background: linear-gradient(90deg, #00020a, #3a9cd0); /* Gradiente de fundo */
+    width: 100%; /* Define a largura total */
+    padding: 10px; /* Define o preenchimento */
+    display: flex;
+    justify-content: space-between; /* Espaçamento entre os elementos */
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8); /* Adiciona sombra */
+    animation: slide-down 1s ease-out; /* Animação de deslizamento para baixo */
+}
+
+header h1 {
+    font-size: 5rem; /* Define o tamanho da fonte */
+    margin: 0; /* Remove margens */
+    flex: 1; /* Permite que o título ocupe espaço flexível */
+    text-align: left; /* Alinha o título à esquerda */
+    
+}
+.text-container p{
+   font-size: x-large; 
+}
+
+
+/* Estilizando a navegação */
+nav ul {
+    list-style: none; /* Remove marcadores da lista */
+    padding: 0; /* Remove preenchimento */
+    margin: 0; /* Remove margem */
+    display: flex; /* Define o layout como flexível */
+    justify-content: center; /* Centraliza os itens */
+    flex: 1; /* Permite que a navegação ocupe espaço flexível */
+}
+
+nav ul li {
+    margin: 0 20px; /* Define a margem horizontal */
+}
+
+nav ul li a {
+    color: #f3efef; /* Define a cor do texto */
+    text-decoration: none; /* Remove sublinhado */
+    font-size: 1.2rem; /* Define o tamanho da fonte */
+    transition: color 0.3s; /* Adiciona transição ao mudar a cor */
+}
+/* Adicionando destaque aos links do cabeçalho ao passar o mouse */
+nav ul li a:hover {
+    color: #ffffff; /* Altera a cor do texto */
+    text-shadow: 0 0 5px #000000; /* Adiciona uma sombra ao texto */
+    text-decoration: underline; /* Adiciona sublinhado */
+    transition: color 0.3s, text-shadow 0.3s, text-decoration 0.3s; /* Adiciona transição ao mudar a cor, sombra e sublinhado */
+}
+
+
+nav ul li a:hover {
+    color: #ffffff; /* Define a cor ao passar o mouse */
+}
+
+/* Estilizando o conteúdo principal */
+.text-container {
+    max-width: 900px; /* Define a largura máxima */
+    padding: 20px; /* Define o preenchimento */
+    text-align: center; /* Centraliza o texto */
+}
+
+/* Mantendo o estilo original das imagens das placas */
+.text-container img {
+    width: 200px; /* Define a largura fixa */
+    height: 200px; /* Define a altura fixa */
+    margin: 1px; /* Define a margem */
+    transition: transform 0.5s; /* Adiciona transição de transformação */
+}
+.text-container img:hover {
+    transform: scale(1.2); /* Aumenta a imagem ao passar o mouse */
+}
+
+/* Estilizando a lista de serviços como uma tabela */
+.text-container ul {
+    display: flex; /* Exibe os itens em linha */
+    flex-wrap: wrap; /* Permite quebra de linha se necessário */
+    list-style: none; /* Remove marcadores da lista */
+    padding: 0; /* Remove preenchimento */
+    margin: 0; /* Remove margem */
+}
+
+.text-container ul li {
+    background: rgba(0, 160, 228, 0.367); /* Fundo semi-transparente */
+    color: #ffffff; /* Define a cor do texto */
+    margin: 5px; /* Define a margem */
+    padding: 15px; /* Define o preenchimento */
+    border-radius: 5px; /* Define bordas arredondadas */
+    font-size: 1.1rem; /* Define o tamanho da fonte */
+    flex: 1 1 calc(33.333% - 10px); /* Ajuste flexível para itens */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adiciona sombra */
+    animation: fade-in 1s ease-in-out; /* Animação de aparição gradual */
+    font-weight: bolder;
+}
+
+/* Estilizando as seções */
+section {
+    margin: 40px 0; /* Define a margem vertical */
+    padding: 20px; /* Define o preenchimento */
+    background: rgba(255, 255, 255, 0.1); /* Fundo semi-transparente */
+    border-radius: 8px; /* Define bordas arredondadas */
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2); /* Adiciona sombra */
+    animation: fade-in 2s ease-in-out; /* Animação de aparição gradual */
+}
+
+section h2 {
+    font-size: 2rem; /* Define o tamanho da fonte */
+    margin-bottom: 20px; /* Define a margem inferior */
+    color: #ff6e7f; /* Define a cor do texto */
+    background: -webkit-linear-gradient(#ff6e7f, #bfe9ff); /* Gradiente de cor */
+    -webkit-background-clip: text; /* Define a área de recorte de fundo */
+    -webkit-text-fill-color: transparent; /* Define a cor de preenchimento do texto */
+    -moz-background-clip: text; /* Define a área de recorte de fundo para Firefox */
+    -moz-text-fill-color: transparent; /* Define a cor de preenchimento do texto para Firefox */
+    -ms-background-clip: text; /* Define a área de recorte de fundo para IE */
+    -ms-text-fill-color: transparent; /* Define a cor de preenchimento do texto para IE */
+    -o-background-clip: text; /* Define a área de recorte de fundo para Opera */
+    -o-text-fill-color: transparent; /* Define a cor de preenchimento do texto para Opera */
+    background-clip: text; /* Define a área de recorte de fundo padrão */
+    text-emphasis-color: transparent; /* Define a cor de preenchimento do texto padrão */
+}
+
+section p {
+    font-size: 1.2rem; /* Define o tamanho da fonte */
+    line-height: 1.7; /* Define a altura da linha */
+    color: #cbd5e0; /* Define a cor do texto */
+}
+
+/* Estilizando o rodapé */
+/* Rodapé */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #1a1a1d;
+    color: #aaa;
+    font-size: 0.9rem;
+    box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.2);
+}
+/* Estilizando links do E-mail e WhatsApp */
+.styled-link {
+    display: inline-flex; /* Define como flexível e limita ao tamanho do conteúdo */
+    align-items: center; /* Centraliza os itens verticalmente */
+    justify-content: center; /* Centraliza horizontalmente */
+    padding: 8px 15px; /* Preenchimento menor */
+    margin: 5px; /* Margem pequena */
+    color: white; /* Cor do texto */
+    background-color: #0a84ff; /* Cor de fundo */
+    border: 2px solid #0a84ff; /* Borda com a mesma cor do fundo */
+    border-radius: 8px; /* Bordas arredondadas */
+    text-decoration: none; /* Remove sublinhado */
+    font-weight: bold; /* Negrito */
+    cursor: pointer; /* Cursor de clique */
+    transition: all 0.3s ease; /* Suaviza mudanças de estilo */
+}
+
+/* Efeito hover */
+.styled-link:hover {
+    background-color: white; /* Fundo branco ao passar o mouse */
+    color: #0a84ff; /* Texto azul ao passar o mouse */
+    border-color: rgb(22, 207, 74); /* Borda branca */
+}
+
+
+.styled-link img {
+    width: 5px; /* Define a largura do ícone */
+    height: 20px; /* Define a altura do ícone */
+    margin-right: 10px; /* Define a margem direita */
+}
+
